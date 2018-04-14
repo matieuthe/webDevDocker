@@ -1,0 +1,9 @@
+apache:
+    build: ./apache
+    container_name: apache
+    volumes:
+        - "../Projets/:/var/www/html"
+    ports:
+        - "8080:80"
+    tty: true
+        
