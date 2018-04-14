@@ -1,8 +1,8 @@
 apache:
-    build: ./apache
+    build: ./DockerFiles/apache
     container_name: apache
     volumes:
-        - "../Projets/:/var/www/html"
+        - "./ProjectFiles/:/var/www/html/"
     ports:
         - "8080:80"
     tty: true
